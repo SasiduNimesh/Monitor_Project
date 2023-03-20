@@ -24,12 +24,31 @@ namespace Monitor_Project
             InitializeComponent();
         }
 
-       
+
+        private int CountOfPhysCores()
+        {
+            ManagementClass mc = new ManagementClass("Win32_Processor");
+            ManagementObjectCollection moc = mc.GetInstances();
+            string socketDesign = string.Empty;
+            List<string> physCPU = new List<string>();
+
+            if (!physCPU.Contains(socketDesign))
+            {
+                physCPU.Add(socketDesign);
+            }
+
+            return physCPU.Count;
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             timer1.Start();
 
+            foreach (var item in new System.Management.ManagementObjectSearcher("Select * from Win32_ComputerSystem").Get())
+            {
+                labelCOUNTOFPHYSICALCPUs.Text = "Count of physical_processors : " + item["NumberOfProcessors"];
+
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
