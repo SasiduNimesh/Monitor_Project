@@ -35,11 +35,21 @@ namespace Monitor_Project
         private void timer1_Tick(object sender, EventArgs e)
         {
             labelDateTime.Text = DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToShortTimeString();
-            labelCPUUSAGE.Text = "CPU Usage : " + (int)PerfCPU.NextValue() + " " + "%";
-            labelRAM.Text = "Available RAM : " + (int)PerfRAM.NextValue() + " ";
+            labelCPUUSAGE.Text = "CPU Usage       : " + (int)PerfCPU.NextValue() + " " + "%";
+            labelRAM.Text = "Available RAM  : " + (int)PerfRAM.NextValue() + " " + "MB";
             labelSYSTEMUPTIME.Text = "Up Time System:" + (int)PerfSYS.NextValue() / 60 + "Minutes";
 
-          
+            float fCPU = pCPU.NextValue();
+            float fRAM = pRAM.NextValue();
+            progressBarCPU.Value = (int)fCPU;
+            progressBarRAM.Value = (int)fRAM;
+            labCPU.Text = string.Format("{0:0.00}%", fCPU);
+            labRAM.Text = string.Format("{0:0.00}%", fRAM);
+
+            chart1.Series["CPU"].Points.AddY(fCPU);
+            chart1.Series["RAM"].Points.AddY(fRAM);
+
+
         }
     }
 
