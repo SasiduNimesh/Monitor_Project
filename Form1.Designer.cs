@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.labelCPUUSAGE = new System.Windows.Forms.Label();
             this.labelRAM = new System.Windows.Forms.Label();
             this.labelSYSTEMUPTIME = new System.Windows.Forms.Label();
@@ -57,7 +57,7 @@
             // 
             this.labelCPUUSAGE.AutoSize = true;
             this.labelCPUUSAGE.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCPUUSAGE.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.labelCPUUSAGE.ForeColor = System.Drawing.Color.MidnightBlue;
             this.labelCPUUSAGE.Location = new System.Drawing.Point(56, 138);
             this.labelCPUUSAGE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCPUUSAGE.Name = "labelCPUUSAGE";
@@ -69,7 +69,7 @@
             // 
             this.labelRAM.AutoSize = true;
             this.labelRAM.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRAM.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.labelRAM.ForeColor = System.Drawing.Color.MidnightBlue;
             this.labelRAM.Location = new System.Drawing.Point(56, 190);
             this.labelRAM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelRAM.Name = "labelRAM";
@@ -80,8 +80,9 @@
             // labelSYSTEMUPTIME
             // 
             this.labelSYSTEMUPTIME.AutoSize = true;
+            this.labelSYSTEMUPTIME.CausesValidation = false;
             this.labelSYSTEMUPTIME.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSYSTEMUPTIME.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.labelSYSTEMUPTIME.ForeColor = System.Drawing.Color.MidnightBlue;
             this.labelSYSTEMUPTIME.Location = new System.Drawing.Point(56, 249);
             this.labelSYSTEMUPTIME.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSYSTEMUPTIME.Name = "labelSYSTEMUPTIME";
@@ -98,10 +99,10 @@
             // labelDateTime
             // 
             this.labelDateTime.AutoSize = true;
-            this.labelDateTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.labelDateTime.BackColor = System.Drawing.Color.Transparent;
             this.labelDateTime.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDateTime.ForeColor = System.Drawing.Color.Maroon;
-            this.labelDateTime.Location = new System.Drawing.Point(747, 28);
+            this.labelDateTime.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labelDateTime.Location = new System.Drawing.Point(56, 33);
             this.labelDateTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelDateTime.Name = "labelDateTime";
             this.labelDateTime.Size = new System.Drawing.Size(117, 27);
@@ -112,7 +113,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label1.Location = new System.Drawing.Point(531, 122);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -124,7 +125,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label2.Location = new System.Drawing.Point(531, 156);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
@@ -136,7 +137,7 @@
             // 
             this.labCPU.AutoSize = true;
             this.labCPU.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labCPU.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.labCPU.ForeColor = System.Drawing.Color.MidnightBlue;
             this.labCPU.Location = new System.Drawing.Point(935, 122);
             this.labCPU.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labCPU.Name = "labCPU";
@@ -148,7 +149,7 @@
             // 
             this.labRAM.AutoSize = true;
             this.labRAM.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labRAM.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.labRAM.ForeColor = System.Drawing.Color.MidnightBlue;
             this.labRAM.Location = new System.Drawing.Point(935, 156);
             this.labRAM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labRAM.Name = "labRAM";
@@ -159,7 +160,7 @@
             // progressBarCPU
             // 
             this.progressBarCPU.Location = new System.Drawing.Point(588, 127);
-            this.progressBarCPU.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.progressBarCPU.Margin = new System.Windows.Forms.Padding(4);
             this.progressBarCPU.Name = "progressBarCPU";
             this.progressBarCPU.Size = new System.Drawing.Size(309, 18);
             this.progressBarCPU.TabIndex = 10;
@@ -167,7 +168,7 @@
             // progressBarRAM
             // 
             this.progressBarRAM.Location = new System.Drawing.Point(588, 161);
-            this.progressBarRAM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.progressBarRAM.Margin = new System.Windows.Forms.Padding(4);
             this.progressBarRAM.Name = "progressBarRAM";
             this.progressBarRAM.Size = new System.Drawing.Size(309, 18);
             this.progressBarRAM.TabIndex = 11;
@@ -185,28 +186,28 @@
             // 
             // chart1
             // 
-            this.chart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.chart1.BackColor = System.Drawing.Color.Thistle;
             this.chart1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
             this.chart1.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.chart1.BorderlineColor = System.Drawing.Color.Navy;
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(536, 217);
-            this.chart1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chart1.Margin = new System.Windows.Forms.Padding(4);
             this.chart1.Name = "chart1";
-            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series5.Legend = "Legend1";
-            series5.Name = "CPU";
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series6.Legend = "Legend1";
-            series6.Name = "RAM";
-            this.chart1.Series.Add(series5);
-            this.chart1.Series.Add(series6);
+            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "CPU";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Legend = "Legend1";
+            series2.Name = "RAM";
+            this.chart1.Series.Add(series1);
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(437, 368);
             this.chart1.TabIndex = 12;
             this.chart1.Text = "chart1";
@@ -215,18 +216,18 @@
             // 
             this.labelCOUNTOFPHYSICALCPUs.AutoSize = true;
             this.labelCOUNTOFPHYSICALCPUs.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCOUNTOFPHYSICALCPUs.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.labelCOUNTOFPHYSICALCPUs.Location = new System.Drawing.Point(56, 80);
+            this.labelCOUNTOFPHYSICALCPUs.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labelCOUNTOFPHYSICALCPUs.Location = new System.Drawing.Point(56, 310);
             this.labelCOUNTOFPHYSICALCPUs.Name = "labelCOUNTOFPHYSICALCPUs";
-            this.labelCOUNTOFPHYSICALCPUs.Size = new System.Drawing.Size(244, 27);
+            this.labelCOUNTOFPHYSICALCPUs.Size = new System.Drawing.Size(256, 27);
             this.labelCOUNTOFPHYSICALCPUs.TabIndex = 13;
-            this.labelCOUNTOFPHYSICALCPUs.Text = "Count of Physical CPUs";
+            this.labelCOUNTOFPHYSICALCPUs.Text = "Count of Physical CPUs :";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.DarkGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1065, 614);
             this.Controls.Add(this.labelCOUNTOFPHYSICALCPUs);
@@ -242,7 +243,7 @@
             this.Controls.Add(this.labelRAM);
             this.Controls.Add(this.labelCPUUSAGE);
             this.ForeColor = System.Drawing.SystemColors.Window;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

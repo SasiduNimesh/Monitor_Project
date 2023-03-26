@@ -46,7 +46,7 @@ namespace Monitor_Project
 
             foreach (var item in new System.Management.ManagementObjectSearcher("Select * from Win32_ComputerSystem").Get())
             {
-                labelCOUNTOFPHYSICALCPUs.Text = "Count of physical_processors : " + item["NumberOfProcessors"];
+                labelCOUNTOFPHYSICALCPUs.Text = "Count of Physical CPUs : " + item["NumberOfProcessors"];
 
             }
         }
@@ -56,7 +56,7 @@ namespace Monitor_Project
             labelDateTime.Text = DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToShortTimeString();
             labelCPUUSAGE.Text = "CPU Usage       : " + (int)PerfCPU.NextValue() + " " + "%";
             labelRAM.Text = "Available RAM  : " + (int)PerfRAM.NextValue() + " " + "MB";
-            labelSYSTEMUPTIME.Text = "Up Time System:" + (int)PerfSYS.NextValue() / 60 + "Minutes";
+            labelSYSTEMUPTIME.Text = "Up Time System:" + (int)PerfSYS.NextValue() / 60 + " Minutes";
 
             float fCPU = pCPU.NextValue();
             float fRAM = pRAM.NextValue();
