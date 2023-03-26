@@ -58,8 +58,14 @@ namespace Monitor_Project
             foreach (var item in new System.Management.ManagementObjectSearcher("Select * from Win32_ComputerSystem").Get())
             {
                 labelCOUNTOFPHYSICALCPUs.Text = "Count of Physical CPUs : " + item["NumberOfProcessors"];
-
             }
+            int coreCount = 0;
+            foreach (var item in new System.Management.ManagementObjectSearcher("Select * from Win32_Processor").Get())
+            {
+                coreCount += int.Parse(item["NumberOfCores"].ToString());
+            }
+
+            labelCountOfCores.Text = "Count of Cores :  " + coreCount.ToString();
         }
 
         private void timer1_Tick(object sender, EventArgs e)

@@ -49,6 +49,7 @@
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.labelCOUNTOFPHYSICALCPUs = new System.Windows.Forms.Label();
             this.labelCOUNTOFLOGICALCPUS = new System.Windows.Forms.Label();
+            this.labelCountOfCores = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pCPU)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRAM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -59,10 +60,9 @@
             this.labelCPUUSAGE.AutoSize = true;
             this.labelCPUUSAGE.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCPUUSAGE.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labelCPUUSAGE.Location = new System.Drawing.Point(56, 138);
-            this.labelCPUUSAGE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCPUUSAGE.Location = new System.Drawing.Point(42, 112);
             this.labelCPUUSAGE.Name = "labelCPUUSAGE";
-            this.labelCPUUSAGE.Size = new System.Drawing.Size(201, 27);
+            this.labelCPUUSAGE.Size = new System.Drawing.Size(163, 22);
             this.labelCPUUSAGE.TabIndex = 0;
             this.labelCPUUSAGE.Text = "CPU Usage            :";
             // 
@@ -71,10 +71,9 @@
             this.labelRAM.AutoSize = true;
             this.labelRAM.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRAM.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labelRAM.Location = new System.Drawing.Point(56, 190);
-            this.labelRAM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelRAM.Location = new System.Drawing.Point(42, 154);
             this.labelRAM.Name = "labelRAM";
-            this.labelRAM.Size = new System.Drawing.Size(204, 27);
+            this.labelRAM.Size = new System.Drawing.Size(163, 22);
             this.labelRAM.TabIndex = 1;
             this.labelRAM.Text = "Available RAM      :";
             // 
@@ -84,10 +83,9 @@
             this.labelSYSTEMUPTIME.CausesValidation = false;
             this.labelSYSTEMUPTIME.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSYSTEMUPTIME.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labelSYSTEMUPTIME.Location = new System.Drawing.Point(56, 249);
-            this.labelSYSTEMUPTIME.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSYSTEMUPTIME.Location = new System.Drawing.Point(42, 202);
             this.labelSYSTEMUPTIME.Name = "labelSYSTEMUPTIME";
-            this.labelSYSTEMUPTIME.Size = new System.Drawing.Size(205, 27);
+            this.labelSYSTEMUPTIME.Size = new System.Drawing.Size(163, 22);
             this.labelSYSTEMUPTIME.TabIndex = 2;
             this.labelSYSTEMUPTIME.Text = "SYSTEM UP TIME  :";
             // 
@@ -103,10 +101,9 @@
             this.labelDateTime.BackColor = System.Drawing.Color.Transparent;
             this.labelDateTime.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDateTime.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labelDateTime.Location = new System.Drawing.Point(56, 33);
-            this.labelDateTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDateTime.Location = new System.Drawing.Point(42, 27);
             this.labelDateTime.Name = "labelDateTime";
-            this.labelDateTime.Size = new System.Drawing.Size(117, 27);
+            this.labelDateTime.Size = new System.Drawing.Size(93, 22);
             this.labelDateTime.TabIndex = 5;
             this.labelDateTime.Text = "Date Time";
             // 
@@ -115,10 +112,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Location = new System.Drawing.Point(531, 122);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(398, 99);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 24);
+            this.label1.Size = new System.Drawing.Size(37, 19);
             this.label1.TabIndex = 6;
             this.label1.Text = "CPU";
             // 
@@ -127,10 +123,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(531, 156);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(398, 127);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 24);
+            this.label2.Size = new System.Drawing.Size(41, 19);
             this.label2.TabIndex = 7;
             this.label2.Text = "RAM";
             // 
@@ -139,10 +134,9 @@
             this.labCPU.AutoSize = true;
             this.labCPU.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labCPU.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labCPU.Location = new System.Drawing.Point(935, 122);
-            this.labCPU.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labCPU.Location = new System.Drawing.Point(701, 99);
             this.labCPU.Name = "labCPU";
-            this.labCPU.Size = new System.Drawing.Size(36, 24);
+            this.labCPU.Size = new System.Drawing.Size(29, 19);
             this.labCPU.TabIndex = 8;
             this.labCPU.Text = "0%";
             // 
@@ -151,27 +145,24 @@
             this.labRAM.AutoSize = true;
             this.labRAM.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labRAM.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labRAM.Location = new System.Drawing.Point(935, 156);
-            this.labRAM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labRAM.Location = new System.Drawing.Point(701, 127);
             this.labRAM.Name = "labRAM";
-            this.labRAM.Size = new System.Drawing.Size(36, 24);
+            this.labRAM.Size = new System.Drawing.Size(29, 19);
             this.labRAM.TabIndex = 9;
             this.labRAM.Text = "0%";
             // 
             // progressBarCPU
             // 
-            this.progressBarCPU.Location = new System.Drawing.Point(588, 127);
-            this.progressBarCPU.Margin = new System.Windows.Forms.Padding(4);
+            this.progressBarCPU.Location = new System.Drawing.Point(441, 103);
             this.progressBarCPU.Name = "progressBarCPU";
-            this.progressBarCPU.Size = new System.Drawing.Size(309, 18);
+            this.progressBarCPU.Size = new System.Drawing.Size(232, 15);
             this.progressBarCPU.TabIndex = 10;
             // 
             // progressBarRAM
             // 
-            this.progressBarRAM.Location = new System.Drawing.Point(588, 161);
-            this.progressBarRAM.Margin = new System.Windows.Forms.Padding(4);
+            this.progressBarRAM.Location = new System.Drawing.Point(441, 131);
             this.progressBarRAM.Name = "progressBarRAM";
-            this.progressBarRAM.Size = new System.Drawing.Size(309, 18);
+            this.progressBarRAM.Size = new System.Drawing.Size(232, 15);
             this.progressBarRAM.TabIndex = 11;
             // 
             // pCPU
@@ -195,8 +186,7 @@
             this.chart1.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(536, 217);
-            this.chart1.Margin = new System.Windows.Forms.Padding(4);
+            this.chart1.Location = new System.Drawing.Point(402, 176);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
             series3.ChartArea = "ChartArea1";
@@ -209,7 +199,7 @@
             series4.Name = "RAM";
             this.chart1.Series.Add(series3);
             this.chart1.Series.Add(series4);
-            this.chart1.Size = new System.Drawing.Size(437, 368);
+            this.chart1.Size = new System.Drawing.Size(328, 299);
             this.chart1.TabIndex = 12;
             this.chart1.Text = "chart1";
             // 
@@ -218,9 +208,10 @@
             this.labelCOUNTOFPHYSICALCPUs.AutoSize = true;
             this.labelCOUNTOFPHYSICALCPUs.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCOUNTOFPHYSICALCPUs.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labelCOUNTOFPHYSICALCPUs.Location = new System.Drawing.Point(56, 310);
+            this.labelCOUNTOFPHYSICALCPUs.Location = new System.Drawing.Point(42, 252);
+            this.labelCOUNTOFPHYSICALCPUs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCOUNTOFPHYSICALCPUs.Name = "labelCOUNTOFPHYSICALCPUs";
-            this.labelCOUNTOFPHYSICALCPUs.Size = new System.Drawing.Size(256, 27);
+            this.labelCOUNTOFPHYSICALCPUs.Size = new System.Drawing.Size(208, 22);
             this.labelCOUNTOFPHYSICALCPUs.TabIndex = 13;
             this.labelCOUNTOFPHYSICALCPUs.Text = "Count of Physical CPUs :";
             // 
@@ -229,19 +220,32 @@
             this.labelCOUNTOFLOGICALCPUS.AutoSize = true;
             this.labelCOUNTOFLOGICALCPUS.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
             this.labelCOUNTOFLOGICALCPUS.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labelCOUNTOFLOGICALCPUS.Location = new System.Drawing.Point(60, 368);
+            this.labelCOUNTOFLOGICALCPUS.Location = new System.Drawing.Point(45, 299);
+            this.labelCOUNTOFLOGICALCPUS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCOUNTOFLOGICALCPUS.Name = "labelCOUNTOFLOGICALCPUS";
-            this.labelCOUNTOFLOGICALCPUS.Size = new System.Drawing.Size(252, 27);
+            this.labelCOUNTOFLOGICALCPUS.Size = new System.Drawing.Size(206, 22);
             this.labelCOUNTOFLOGICALCPUS.TabIndex = 14;
             this.labelCOUNTOFLOGICALCPUS.Text = "Count of Logical CPUs : ";
             // 
+            // labelCountOfCores
+            // 
+            this.labelCountOfCores.AutoSize = true;
+            this.labelCountOfCores.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
+            this.labelCountOfCores.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labelCountOfCores.Location = new System.Drawing.Point(45, 340);
+            this.labelCountOfCores.Name = "labelCountOfCores";
+            this.labelCountOfCores.Size = new System.Drawing.Size(147, 22);
+            this.labelCountOfCores.TabIndex = 15;
+            this.labelCountOfCores.Text = "Count of Cores : ";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1065, 614);
+            this.ClientSize = new System.Drawing.Size(799, 499);
+            this.Controls.Add(this.labelCountOfCores);
             this.Controls.Add(this.labelCOUNTOFLOGICALCPUS);
             this.Controls.Add(this.labelCOUNTOFPHYSICALCPUs);
             this.Controls.Add(this.chart1);
@@ -256,7 +260,6 @@
             this.Controls.Add(this.labelRAM);
             this.Controls.Add(this.labelCPUUSAGE);
             this.ForeColor = System.Drawing.SystemColors.Window;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -286,6 +289,7 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Label labelCOUNTOFPHYSICALCPUs;
         private System.Windows.Forms.Label labelCOUNTOFLOGICALCPUS;
+        private System.Windows.Forms.Label labelCountOfCores;
     }
 }
 
