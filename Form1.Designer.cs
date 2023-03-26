@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.labelCPUUSAGE = new System.Windows.Forms.Label();
             this.labelRAM = new System.Windows.Forms.Label();
             this.labelSYSTEMUPTIME = new System.Windows.Forms.Label();
@@ -48,6 +48,7 @@
             this.pRAM = new System.Diagnostics.PerformanceCounter();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.labelCOUNTOFPHYSICALCPUs = new System.Windows.Forms.Label();
+            this.labelCOUNTOFLOGICALCPUS = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pCPU)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRAM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -190,24 +191,24 @@
             this.chart1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
             this.chart1.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.chart1.BorderlineColor = System.Drawing.Color.Navy;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(536, 217);
             this.chart1.Margin = new System.Windows.Forms.Padding(4);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Legend = "Legend1";
-            series1.Name = "CPU";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Legend = "Legend1";
-            series2.Name = "RAM";
-            this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Legend = "Legend1";
+            series3.Name = "CPU";
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Legend = "Legend1";
+            series4.Name = "RAM";
+            this.chart1.Series.Add(series3);
+            this.chart1.Series.Add(series4);
             this.chart1.Size = new System.Drawing.Size(437, 368);
             this.chart1.TabIndex = 12;
             this.chart1.Text = "chart1";
@@ -223,6 +224,17 @@
             this.labelCOUNTOFPHYSICALCPUs.TabIndex = 13;
             this.labelCOUNTOFPHYSICALCPUs.Text = "Count of Physical CPUs :";
             // 
+            // labelCOUNTOFLOGICALCPUS
+            // 
+            this.labelCOUNTOFLOGICALCPUS.AutoSize = true;
+            this.labelCOUNTOFLOGICALCPUS.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
+            this.labelCOUNTOFLOGICALCPUS.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labelCOUNTOFLOGICALCPUS.Location = new System.Drawing.Point(60, 368);
+            this.labelCOUNTOFLOGICALCPUS.Name = "labelCOUNTOFLOGICALCPUS";
+            this.labelCOUNTOFLOGICALCPUS.Size = new System.Drawing.Size(252, 27);
+            this.labelCOUNTOFLOGICALCPUS.TabIndex = 14;
+            this.labelCOUNTOFLOGICALCPUS.Text = "Count of Logical CPUs : ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -230,6 +242,7 @@
             this.BackColor = System.Drawing.Color.DarkGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1065, 614);
+            this.Controls.Add(this.labelCOUNTOFLOGICALCPUS);
             this.Controls.Add(this.labelCOUNTOFPHYSICALCPUs);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.progressBarRAM);
@@ -272,6 +285,7 @@
         private System.Diagnostics.PerformanceCounter pRAM;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Label labelCOUNTOFPHYSICALCPUs;
+        private System.Windows.Forms.Label labelCOUNTOFLOGICALCPUS;
     }
 }
 

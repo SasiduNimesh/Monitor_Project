@@ -39,7 +39,18 @@ namespace Monitor_Project
 
             return physCPU.Count;
         }
+        private int CountOfLogicalCores()
+        {
+            int logicalCPU = 0;
+            ManagementClass mc = new ManagementClass("Win32_Processor");
+            ManagementObjectCollection moc = mc.GetInstances();
 
+
+            logicalCPU++;
+
+
+            return logicalCPU;
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             timer1.Start();
@@ -57,6 +68,8 @@ namespace Monitor_Project
             labelCPUUSAGE.Text = "CPU Usage       : " + (int)PerfCPU.NextValue() + " " + "%";
             labelRAM.Text = "Available RAM  : " + (int)PerfRAM.NextValue() + " " + "MB";
             labelSYSTEMUPTIME.Text = "Up Time System:" + (int)PerfSYS.NextValue() / 60 + " Minutes";
+
+            labelCOUNTOFLOGICALCPUS.Text = "Count of Logical CPUs : " + Environment.ProcessorCount;
 
             float fCPU = pCPU.NextValue();
             float fRAM = pRAM.NextValue();
