@@ -71,11 +71,11 @@ namespace Monitor_Project
         private void timer1_Tick(object sender, EventArgs e)
         {
             labelDateTime.Text = DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToShortTimeString();
-            labelCPUUSAGE.Text = "CPU Usage       : " + (int)PerfCPU.NextValue() + " " + "%";
-            labelRAM.Text = "Available RAM  : " + (int)PerfRAM.NextValue() + " " + "MB";
-            labelSYSTEMUPTIME.Text = "Up Time System:" + (int)PerfSYS.NextValue() / 60 + " Minutes";
+            labelCPUUSAGE.Text = "CPU Usage          : " + (int)PerfCPU.NextValue() + " " + "%";
+            labelRAM.Text = "Available RAM    : " + (int)PerfRAM.NextValue() + " " + "MB";
+            labelSYSTEMUPTIME.Text = "Up Time System :" + (int)PerfSYS.NextValue() / 60 + " Minutes";
 
-            labelCOUNTOFLOGICALCPUS.Text = "Count of Logical CPUs : " + Environment.ProcessorCount;
+            labelCOUNTOFLOGICALCPUS.Text = "Count of Logical CPUs  : " + Environment.ProcessorCount;
 
             float fCPU = pCPU.NextValue();
             float fRAM = pRAM.NextValue();
