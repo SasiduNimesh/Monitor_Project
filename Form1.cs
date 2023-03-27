@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//System Resource Moniter
 namespace Monitor_Project
 {
     public partial class Form1 : Form
@@ -53,7 +54,7 @@ namespace Monitor_Project
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            timer1.Start();
+            timer1.Start();  // call to start timer
 
             foreach (var item in new System.Management.ManagementObjectSearcher("Select * from Win32_ComputerSystem").Get())
             {
@@ -65,18 +66,21 @@ namespace Monitor_Project
                 coreCount += int.Parse(item["NumberOfCores"].ToString());
             }
 
-            labelCountOfCores.Text = "Count of Cores :  " + coreCount.ToString();
+            labelCountOfCores.Text = "Count of Cores :  " + coreCount.ToString(); // display count of processors
         }
 
         private void timer1_Tick(object sender, EventArgs e)
-        {
+        {   
+            // display time , cpu usage , RAM avilable and system up time
             labelDateTime.Text = DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToShortTimeString();
             labelCPUUSAGE.Text = "CPU Usage          : " + (int)PerfCPU.NextValue() + " " + "%";
             labelRAM.Text = "Available RAM    : " + (int)PerfRAM.NextValue() + " " + "MB";
             labelSYSTEMUPTIME.Text = "Up Time System :" + (int)PerfSYS.NextValue() / 60 + " Minutes";
 
+            // count of Logical processores
             labelCOUNTOFLOGICALCPUS.Text = "Count of Logical CPUs  : " + Environment.ProcessorCount;
 
+            // code for process bar
             float fCPU = pCPU.NextValue();
             float fRAM = pRAM.NextValue();
             progressBarCPU.Value = (int)fCPU;
@@ -84,6 +88,7 @@ namespace Monitor_Project
             labCPU.Text = string.Format("{0:0.00}%", fCPU);
             labRAM.Text = string.Format("{0:0.00}%", fRAM);
 
+            // code for chart to display difference CPU & RAM actvity
             chart1.Series["CPU"].Points.AddY(fCPU);
             chart1.Series["RAM"].Points.AddY(fRAM);
 

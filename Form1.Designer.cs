@@ -112,7 +112,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Location = new System.Drawing.Point(415, 99);
+            this.label1.Location = new System.Drawing.Point(415, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 19);
             this.label1.TabIndex = 6;
@@ -123,7 +123,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(415, 127);
+            this.label2.Location = new System.Drawing.Point(415, 116);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 19);
             this.label2.TabIndex = 7;
@@ -134,7 +134,7 @@
             this.labCPU.AutoSize = true;
             this.labCPU.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labCPU.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labCPU.Location = new System.Drawing.Point(726, 99);
+            this.labCPU.Location = new System.Drawing.Point(726, 79);
             this.labCPU.Name = "labCPU";
             this.labCPU.Size = new System.Drawing.Size(29, 19);
             this.labCPU.TabIndex = 8;
@@ -145,7 +145,7 @@
             this.labRAM.AutoSize = true;
             this.labRAM.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labRAM.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labRAM.Location = new System.Drawing.Point(726, 127);
+            this.labRAM.Location = new System.Drawing.Point(726, 112);
             this.labRAM.Name = "labRAM";
             this.labRAM.Size = new System.Drawing.Size(29, 19);
             this.labRAM.TabIndex = 9;
@@ -153,14 +153,14 @@
             // 
             // progressBarCPU
             // 
-            this.progressBarCPU.Location = new System.Drawing.Point(475, 103);
+            this.progressBarCPU.Location = new System.Drawing.Point(475, 83);
             this.progressBarCPU.Name = "progressBarCPU";
             this.progressBarCPU.Size = new System.Drawing.Size(232, 15);
             this.progressBarCPU.TabIndex = 10;
             // 
             // progressBarRAM
             // 
-            this.progressBarRAM.Location = new System.Drawing.Point(475, 131);
+            this.progressBarRAM.Location = new System.Drawing.Point(475, 116);
             this.progressBarRAM.Name = "progressBarRAM";
             this.progressBarRAM.Size = new System.Drawing.Size(232, 15);
             this.progressBarRAM.TabIndex = 11;
@@ -186,7 +186,7 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(419, 176);
+            this.chart1.Location = new System.Drawing.Point(419, 155);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
             series1.ChartArea = "ChartArea1";
@@ -199,7 +199,7 @@
             series2.Name = "RAM";
             this.chart1.Series.Add(series1);
             this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(328, 299);
+            this.chart1.Size = new System.Drawing.Size(336, 309);
             this.chart1.TabIndex = 12;
             this.chart1.Text = "chart1";
             // 
